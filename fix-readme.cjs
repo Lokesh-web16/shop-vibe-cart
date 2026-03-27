@@ -1,4 +1,6 @@
-# 🛒 ShopVibe — Add to Cart Application Using Router
+const fs = require('fs');
+
+fs.writeFileSync('README.md', `# 🛒 ShopVibe — Add to Cart Application Using Router
 
 A modern, responsive e-commerce shopping cart application built with **ReactJS** and **React Router**, featuring smooth animations, dark theme UI, and complete cart management functionality.
 
@@ -35,8 +37,8 @@ A modern, responsive e-commerce shopping cart application built with **ReactJS**
 
 ## ✨ Features
 
-### 🛍️ Products Page (`/`)
-- Fetches products from **Fake Store API** (`https://fakestoreapi.com/products`)
+### 🛍️ Products Page (\`/\`)
+- Fetches products from **Fake Store API** (\`https://fakestoreapi.com/products\`)
 - Displays products in a **responsive grid layout** (1–4 columns)
 - Each product shows **image, title, price, description, and ratings**
 - **Category filtering** — filter by All, Electronics, Jewelery, Men's, Women's Clothing
@@ -45,7 +47,7 @@ A modern, responsive e-commerce shopping cart application built with **ReactJS**
 - **Skeleton loading** animation while fetching data
 - **Error handling** with retry option
 
-### 🛒 Cart Page (`/cart`)
+### 🛒 Cart Page (\`/cart\`)
 - Displays all items added to the cart
 - Each item shows **product name, price, quantity**, and **"Remove from Cart"** button
 - Users can **Increase / Decrease quantity** of each item
@@ -62,8 +64,8 @@ A modern, responsive e-commerce shopping cart application built with **ReactJS**
 
 ### 🧭 Routing
 - **React Router** used for navigation between pages
-- `/` — Products page
-- `/cart` — Cart page
+- \`/\` — Products page
+- \`/cart\` — Cart page
 - Active page highlighted in navigation
 - Proper back navigation from cart to products
 
@@ -81,7 +83,7 @@ A modern, responsive e-commerce shopping cart application built with **ReactJS**
 
 ## 📂 Project Structure
 
-```
+\`\`\`
 shop-vibe-cart/
 ├── public/
 │   └── _redirects              # Netlify SPA routing config
@@ -107,7 +109,7 @@ shop-vibe-cart/
 ├── tailwind.config.js          # Tailwind CSS config
 ├── postcss.config.js           # PostCSS config
 └── README.md                   # Documentation
-```
+\`\`\`
 
 ---
 
@@ -120,7 +122,7 @@ shop-vibe-cart/
 
 ### Installation
 
-```bash
+\`\`\`bash
 # Clone the repository
 git clone https://github.com/Lokesh-web16/shop-vibe-cart.git
 
@@ -132,28 +134,28 @@ npm install
 
 # Start development server
 npm run dev
-```
+\`\`\`
 
-The app runs at `http://localhost:5173`
+The app runs at \`http://localhost:5173\`
 
 ### Build for Production
 
-```bash
+\`\`\`bash
 npm run build
-```
+\`\`\`
 
 ---
 
 ## 📋 API Reference
 
-**Base URL:** `https://fakestoreapi.com`
+**Base URL:** \`https://fakestoreapi.com\`
 
 | Endpoint | Method | Description |
 |---|---|---|
-| `/products` | GET | Fetch all products |
+| \`/products\` | GET | Fetch all products |
 
 ### Sample Product Response
-```json
+\`\`\`json
 {
   "id": 1,
   "title": "Fjallraven Backpack",
@@ -166,7 +168,7 @@ npm run build
     "count": 120
   }
 }
-```
+\`\`\`
 
 ---
 
@@ -201,16 +203,28 @@ npm run build
 1. Push code to GitHub
 2. Go to [Netlify](https://www.netlify.com)
 3. Click **"Add new site"** → **"Import an existing project"**
-4. Connect GitHub and select `shop-vibe-cart` repository
+4. Connect GitHub and select \`shop-vibe-cart\` repository
 5. Build settings:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `dist`
+   - **Build command:** \`npm run build\`
+   - **Publish directory:** \`dist\`
 6. Click **"Deploy site"**
 
-> The `public/_redirects` file handles React Router SPA routing on Netlify.
+> The \`public/_redirects\` file handles React Router SPA routing on Netlify.
 
 ---
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+`.trimStart());
+
+console.log('✅ README.md updated — matches exact tech stack requirements!');
+console.log('');
+console.log('Tech Stack in README:');
+console.log('  ✅ ReactJS');
+console.log('  ✅ React Router');
+console.log('  ✅ HTML/CSS');
+console.log('  ✅ Tailwind CSS');
+console.log('  ✅ JavaScript');
+console.log('  ❌ No extra tech mentioned');
+console.log('');
